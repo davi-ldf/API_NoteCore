@@ -3,5 +3,6 @@ require('../config.php');
 
 $array = [];
 
-echo json_encode($array);
-exit;
+$array['pong'] = true;
+
+require('../return.php');
