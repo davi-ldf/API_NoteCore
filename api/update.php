@@ -7,15 +7,11 @@ if($method === 'put') {
 
     parse_str(file_get_contents('php://input'), $input);
 
-    //$id = (!empty($input['id'])) ? input['id'] : null; 
+ //$id = (!empty($input['id'])) ? input['id'] : null; 
     $id = $input['id'] ?? null;
     $title = $input['title'] ?? null;
     $body = $input['body'] ?? null;
-    /*
-    $id = filter_var($id);
-    $title = filter_var($title);
-    $body = filter_var($body);
-    */
+
 
     $id = filter_var($id, FILTER_VALIDATE_INT);
     $title = filter_var($title, FILTER_SANITIZE_SPECIAL_CHARS);
