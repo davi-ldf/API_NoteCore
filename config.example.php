@@ -1,4 +1,5 @@
 <?php 
+//Rename this file to config.php
 $db_host = '';
 $db_name = 'notecore';
 $db_user = '';
