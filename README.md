@@ -69,10 +69,10 @@ In the chosen tool, make HTTP requests to the appropriate endpoints as described
 
 - `GET /api/ping` - Checks if the API is running (`/api/ping.php`).
 - `GET /api/notes` - Retrieves all notes (`/api/getall.php`).
-- `GET /api/note/123` - Retrieves note with ID 123 (`/api/get.php`).
-- `POST /api/note` - Inserts a new note (`/api/insert.php`).
-- `PUT /api/note/123` - Updates note with ID 123 (`/api/update.php`).
-- `DELETE /api/note/123` - Deletes note with ID 123 (`/api/delete.php`).
+- `GET /api/note/123` - Retrieves note with (id) (`/api/get.php`).
+- `POST /api/note` - Inserts a new note (title, body) (`/api/insert.php`).
+- `PUT /api/note/123` - Updates note with (id, title, body) (`/api/update.php`).
+- `DELETE /api/note/123` - Deletes note with (id) (`/api/delete.php`).
 
 Ensure that your server environment supports PHP and that CORS headers are correctly configured by including `return.php` in your API scripts.
 
@@ -152,10 +152,10 @@ Na ferramenta escolhida, faça requisições HTTP aos endpoints apropriados conf
 
 - `GET /api/ping` - Verifica se a API está em execução (`/api/ping.php`).
 - `GET /api/notes` - Retorna todas as anotações (`/api/getall.php`).
-- `GET /api/note/123` - Retorna a anotação com ID 123 (`/api/get.php`).
-- `POST /api/note` - Insere uma nova anotação (`/api/insert.php`).
-- `PUT /api/note/123` - Atualiza a anotação com ID 123 (`/api/update.php`).
-- `DELETE /api/note/123` - Deleta a anotação com ID 123 (`/api/delete.php`).
+- `GET /api/note/123` - Retorna a anotação com (id) (`/api/get.php`).
+- `POST /api/note` - Insere uma nova anotação com (title, body) (`/api/insert.php`).
+- `PUT /api/note/123` - Atualiza a anotação com (id, title, body) (`/api/update.php`).
+- `DELETE /api/note/123` - Deleta a anotação com (id) (`/api/delete.php`).
 
 
 
