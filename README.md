@@ -13,7 +13,7 @@ NoteCore is a simple API developed in Structural PHP for managing notes using a 
 
 1. Clone this repository to your local environment:
 
-    git clone https://github.com/davi-ldf/API_NoteCore.git
+    `git clone https://github.com/davi-ldf/API_NoteCore.git`
 
 
 2. Import the `notecore.sql` file located in the root of the project in your MySQL database management tool (such as MySQL Workbench, phpMyAdmin, or via command line).
@@ -103,7 +103,7 @@ NoteCore é uma API simples desenvolvida em PHP Estrutural para gerenciar anota�
 1. Clone este repositório para seu ambiente local:
 
 
-    git clone https://github.com/davi-ldf/API_NoteCore.git
+    `git clone https://github.com/davi-ldf/API_NoteCore.git`
 
 2. Importe o arquivo `notecore.sql` localizado na raiz do projeto no seu gerenciador de banco de dados MySQL (como MySQL Workbench, phpMyAdmin, ou via linha de comando).
 
