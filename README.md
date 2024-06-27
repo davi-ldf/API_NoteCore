@@ -7,6 +7,7 @@ NoteCore is a simple API developed in Structural PHP for managing notes using a 
 - PHP 7.0 or higher
 - Web server compatible with PHP (e.g., Apache, Nginx)
 - MySQL database
+- PDO extension enabled.
 
 ## Setup
 
@@ -15,10 +16,13 @@ NoteCore is a simple API developed in Structural PHP for managing notes using a 
     git clone https://github.com/davi-ldf/API_NoteCore.git
 
 
-2. Rename the `config.example.php` file to `config.php`.
+2. Import the `notecore.sql` file located in the root of the project in your MySQL database management tool (such as MySQL Workbench, phpMyAdmin, or via command line).
 
 
-3. Open the `config.php` file and configure your database credentials:
+3. Rename the `config.example.php` file to `config.php`.
+
+
+4. Open the `config.php` file and configure your database credentials:
 
 ```php
 <?php
@@ -26,9 +30,17 @@ NoteCore is a simple API developed in Structural PHP for managing notes using a 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'your_username');
 define('DB_PASSWORD', 'your_password');
-define('DB_NAME', 'database_name');
+define('DB_NAME', 'notecore');
 
-````
+```
+
+
+
+
+
+
+For more details on how to configure and use NoteCore API, refer to the [Usage](#usage) section in the README.
+
 
 ## Project Structure
 
@@ -93,10 +105,11 @@ NoteCore Ã© uma API simples desenvolvida em PHP Estrutural para gerenciar anotaÃ
 
     git clone https://github.com/davi-ldf/API_NoteCore.git
 
+2. Importe o arquivo `notecore.sql` localizado na raiz do projeto no seu gerenciador de banco de dados MySQL (como MySQL Workbench, phpMyAdmin, ou via linha de comando).
 
-2. Renomeie o arquivo `config.example.php` para `config.php`.
+3. Renomeie o arquivo `config.example.php` para `config.php`.
 
-3. Abra o arquivo `config.php` e configure as credenciais do banco de dados:
+4. Abra o arquivo `config.php` e configure as credenciais do banco de dados:
 
 ```php
 <?php
