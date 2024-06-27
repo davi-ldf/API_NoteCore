@@ -70,3 +70,81 @@ Contributions are welcome! Feel free to submit pull requests or report issues.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
+
+
+
+### README em português
+
+
+# NoteCore API (Sistema Simples de Anotações)
+
+NoteCore é uma API simples desenvolvida em PHP Estrutural para gerenciar anotações utilizando um banco de dados MySQL. Este projeto permite operações completas de CRUD para manipulação de dados de anotações.
+
+## Requisitos
+
+- PHP 7.0 ou superior
+- Servidor web compatível com PHP (por exemplo, Apache, Nginx)
+- Banco de dados MySQL
+
+## Configuração
+
+1. Clone este repositório para seu ambiente local:
+
+
+git clone https://github.com/davi-ldf/API_NoteCore.git
+
+
+2. Renomeie o arquivo `config.example.php` para `config.php`.
+
+3. Abra o arquivo `config.php` e configure as credenciais do banco de dados:
+
+```php
+<?php
+
+define('DB_HOST', 'localhost');
+define('DB_USER', 'seu_usuario');
+define('DB_PASSWORD', 'sua_senha');
+define('DB_NAME', 'nome_do_banco');
+```
+
+## Estrutura do Projeto
+
+A estrutura do projeto está organizada da seguinte forma:
+
+- `config.php`: Arquivo de configuração do banco de dados localizado na raiz do projeto.
+- `return.php`: Arquivo PHP que gerencia cabeçalhos CORS e saída JSON para respostas da API.
+
+### Diretório API
+
+O diretório `api/` contém os arquivos essenciais da API:
+
+- `ping.php`: Script simples para verificar se a API está em execução.
+- `get.php`: Script PHP para recuperar uma única anotação por ID.
+- `getall.php`: Script PHP para recuperar todas as anotações.
+- `insert.php`: Script PHP para inserir uma nova anotação.
+- `update.php`: Script PHP para atualizar uma anotação existente.
+- `delete.php`: Script PHP para deletar uma anotação.
+
+Cada script PHP no diretório `api/` corresponde a uma operação específica de CRUD nos dados de anotações.
+
+### Uso
+
+Para interagir com a API, faça requisições HTTP aos endpoints apropriados conforme descrito anteriormente:
+
+- `GET /api/ping` - Verifica se a API está em execução (`/api/ping.php`).
+- `GET /api/notes` - Retorna todas as anotações (`/api/getall.php`).
+- `GET /api/note/123` - Retorna a anotação com ID 123 (`/api/get.php`).
+- `POST /api/note` - Insere uma nova anotação (`/api/insert.php`).
+- `PUT /api/note/123` - Atualiza a anotação com ID 123 (`/api/update.php`).
+- `DELETE /api/note/123` - Deleta a anotação com ID 123 (`/api/delete.php`).
+
+Certifique-se de que seu ambiente de servidor suporte PHP e que os cabeçalhos CORS estejam corretamente configurados ao incluir `return.php` nos seus scripts da API.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou relatar problemas.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
