@@ -1,4 +1,4 @@
-# NoteCore API
+# NoteCore API (Simple Notes System)
 
 NoteCore is a simple API developed in Structural PHP for managing notes using a MySQL database. This project allows complete CRUD operations for handling note data.
 
@@ -7,28 +7,39 @@ NoteCore is a simple API developed in Structural PHP for managing notes using a 
 - PHP 7.0 or higher
 - Web server compatible with PHP (e.g., Apache, Nginx)
 - MySQL database
+- PDO extension enabled.
 
 ## Setup
 
 1. Clone this repository to your local environment:
 
-    git clone https://github.com/davi-ldf/API_NoteCore.git
+    `git clone https://github.com/davi-ldf/API_NoteCore.git`
 
 
-2. Rename the `config.example.php` file to `config.php`.
+2. Import the `notecore.sql` file located in the root of the project in your MySQL database management tool (such as MySQL Workbench, phpMyAdmin, or via command line).
 
 
-3. Open the `config.php` file and configure your database credentials:
+3. Rename the `config.example.php` file to `config.php`.
+
+
+4. Open the `config.php` file and configure your database credentials:
 
 ```php
 <?php
+$db_host = 'your_host_name';
+$db_name = 'notecore';
+$db_user = 'your_user';
+$db_pass = 'your_password';
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'your_username');
-define('DB_PASSWORD', 'your_password');
-define('DB_NAME', 'database_name');
+```
 
-````
+
+
+
+
+
+For more details on how to configure and use NoteCore API, refer to the [Usage](#usage) section in the README.
+
 
 ## Project Structure
 
@@ -52,14 +63,16 @@ Each PHP script in the `api/` directory corresponds to a specific CRUD operation
 
 ### Usage
 
-To interact with the API, make HTTP requests to the appropriate endpoints as described previously:
+To interact with the NoteCore API, you can use tools like [Insomnia](https://insomnia.rest/) or any other HTTP client.
+
+In the chosen tool, make HTTP requests to the appropriate endpoints as described previously:
 
 - `GET /api/ping` - Checks if the API is running (`/api/ping.php`).
 - `GET /api/notes` - Retrieves all notes (`/api/getall.php`).
-- `GET /api/note/123` - Retrieves note with ID 123 (`/api/get.php`).
-- `POST /api/note` - Inserts a new note (`/api/insert.php`).
-- `PUT /api/note/123` - Updates note with ID 123 (`/api/update.php`).
-- `DELETE /api/note/123` - Deletes note with ID 123 (`/api/delete.php`).
+- `GET /api/note/123` - Retrieves note with (id) (`/api/get.php`).
+- `POST /api/note` - Inserts a new note (title, body) (`/api/insert.php`).
+- `PUT /api/note/123` - Updates note with (id, title, body) (`/api/update.php`).
+- `DELETE /api/note/123` - Deletes note with (id) (`/api/delete.php`).
 
 Ensure that your server environment supports PHP and that CORS headers are correctly configured by including `return.php` in your API scripts.
 
@@ -71,6 +84,8 @@ Contributions are welcome! Feel free to submit pull requests or report issues.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
 
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
 ### README em português
@@ -85,26 +100,28 @@ NoteCore é uma API simples desenvolvida em PHP Estrutural para gerenciar anota�
 - PHP 7.0 ou superior
 - Servidor web compatível com PHP (por exemplo, Apache, Nginx)
 - Banco de dados MySQL
+- Extensão PDO habilitada.
 
 ## Configuração
 
 1. Clone este repositório para seu ambiente local:
 
 
-    git clone https://github.com/davi-ldf/API_NoteCore.git
+    `git clone https://github.com/davi-ldf/API_NoteCore.git`
 
+2. Importe o arquivo `notecore.sql` localizado na raiz do projeto no seu gerenciador de banco de dados MySQL (como MySQL Workbench, phpMyAdmin, ou via linha de comando).
 
-2. Renomeie o arquivo `config.example.php` para `config.php`.
+3. Renomeie o arquivo `config.example.php` para `config.php`.
 
-3. Abra o arquivo `config.php` e configure as credenciais do banco de dados:
+4. Abra o arquivo `config.php` e configure as credenciais do banco de dados:
 
 ```php
 <?php
+$db_host = 'seu_host';
+$db_name = 'notecore';
+$db_user = 'seu_usuario';
+$db_pass = 'sua_senha';
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'seu_usuario');
-define('DB_PASSWORD', 'sua_senha');
-define('DB_NAME', 'nome_do_banco');
 ```
 
 ## Estrutura do Projeto
@@ -129,14 +146,18 @@ Cada script PHP no diretório `api/` corresponde a uma operação específica de
 
 ### Uso
 
-Para interagir com a API, faça requisições HTTP aos endpoints apropriados conforme descrito anteriormente:
+Para interagir com a API NoteCore, você pode utilizar ferramentas como [Insomnia](https://insomnia.rest/) ou qualquer outro cliente HTTP.
+
+Na ferramenta escolhida, faça requisições HTTP aos endpoints apropriados conforme descrito anteriormente:
 
 - `GET /api/ping` - Verifica se a API está em execução (`/api/ping.php`).
 - `GET /api/notes` - Retorna todas as anotações (`/api/getall.php`).
-- `GET /api/note/123` - Retorna a anotação com ID 123 (`/api/get.php`).
-- `POST /api/note` - Insere uma nova anotação (`/api/insert.php`).
-- `PUT /api/note/123` - Atualiza a anotação com ID 123 (`/api/update.php`).
-- `DELETE /api/note/123` - Deleta a anotação com ID 123 (`/api/delete.php`).
+- `GET /api/note/123` - Retorna a anotação com (id) (`/api/get.php`).
+- `POST /api/note` - Insere uma nova anotação com (title, body) (`/api/insert.php`).
+- `PUT /api/note/123` - Atualiza a anotação com (id, title, body) (`/api/update.php`).
+- `DELETE /api/note/123` - Deleta a anotação com (id) (`/api/delete.php`).
+
+
 
 Certifique-se de que seu ambiente de servidor suporte PHP e que os cabeçalhos CORS estejam corretamente configurados ao incluir `return.php` nos seus scripts da API.
 
