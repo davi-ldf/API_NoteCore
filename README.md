@@ -26,11 +26,10 @@ NoteCore is a simple API developed in Structural PHP for managing notes using a 
 
 ```php
 <?php
-
-define('DB_HOST', 'localhost');
-define('DB_USER', 'your_username');
-define('DB_PASSWORD', 'your_password');
-define('DB_NAME', 'notecore');
+$db_host = 'your_host_name';
+$db_name = 'notecore';
+$db_user = 'your_user';
+$db_pass = 'your_password';
 
 ```
 
@@ -113,11 +112,11 @@ NoteCore Ã© uma API simples desenvolvida em PHP Estrutural para gerenciar anotaÃ
 
 ```php
 <?php
+$db_host = 'seu_host';
+$db_name = 'notecore';
+$db_user = 'seu_usuario';
+$db_pass = 'sua_senha';
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'seu_usuario');
-define('DB_PASSWORD', 'sua_senha');
-define('DB_NAME', 'nome_do_banco');
 ```
 
 ## Estrutura do Projeto
