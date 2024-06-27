@@ -63,7 +63,9 @@ Each PHP script in the `api/` directory corresponds to a specific CRUD operation
 
 ### Usage
 
-To interact with the API, make HTTP requests to the appropriate endpoints as described previously:
+To interact with the NoteCore API, you can use tools like [Insomnia](https://insomnia.rest/) or any other HTTP client.
+
+In the chosen tool, make HTTP requests to the appropriate endpoints as described previously:
 
 - `GET /api/ping` - Checks if the API is running (`/api/ping.php`).
 - `GET /api/notes` - Retrieves all notes (`/api/getall.php`).
@@ -144,7 +146,9 @@ Cada script PHP no diretório `api/` corresponde a uma operação específica de
 
 ### Uso
 
-Para interagir com a API, faça requisições HTTP aos endpoints apropriados conforme descrito anteriormente:
+Para interagir com a API NoteCore, você pode utilizar ferramentas como [Insomnia](https://insomnia.rest/) ou qualquer outro cliente HTTP.
+
+Na ferramenta escolhida, faça requisições HTTP aos endpoints apropriados conforme descrito anteriormente:
 
 - `GET /api/ping` - Verifica se a API está em execução (`/api/ping.php`).
 - `GET /api/notes` - Retorna todas as anotações (`/api/getall.php`).
@@ -152,6 +156,8 @@ Para interagir com a API, faça requisições HTTP aos endpoints apropriados con
 - `POST /api/note` - Insere uma nova anotação (`/api/insert.php`).
 - `PUT /api/note/123` - Atualiza a anotação com ID 123 (`/api/update.php`).
 - `DELETE /api/note/123` - Deleta a anotação com ID 123 (`/api/delete.php`).
+
+
 
 Certifique-se de que seu ambiente de servidor suporte PHP e que os cabeçalhos CORS estejam corretamente configurados ao incluir `return.php` nos seus scripts da API.
 
