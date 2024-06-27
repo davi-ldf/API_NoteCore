@@ -1,4 +1,4 @@
-# NoteCore API
+# NoteCore API (Simple Notes System)
 
 NoteCore is a simple API developed in Structural PHP for managing notes using a MySQL database. This project allows complete CRUD operations for handling note data.
 
@@ -82,6 +82,8 @@ Contributions are welcome! Feel free to submit pull requests or report issues.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
 
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
 ### README em português
