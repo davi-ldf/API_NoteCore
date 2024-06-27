@@ -12,7 +12,7 @@ NoteCore is a simple API developed in Structural PHP for managing notes using a 
 
 1. Clone this repository to your local environment:
 
-git clone https://github.com/davi-ldf/API_NoteCore.git
+    git clone https://github.com/davi-ldf/API_NoteCore.git
 
 
 2. Rename the `config.example.php` file to `config.php`.
@@ -91,7 +91,7 @@ NoteCore é uma API simples desenvolvida em PHP Estrutural para gerenciar anota�
 1. Clone este repositório para seu ambiente local:
 
 
-git clone https://github.com/davi-ldf/API_NoteCore.git
+    git clone https://github.com/davi-ldf/API_NoteCore.git
 
 
 2. Renomeie o arquivo `config.example.php` para `config.php`.
