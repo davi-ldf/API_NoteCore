@@ -98,6 +98,7 @@ NoteCore é uma API simples desenvolvida em PHP Estrutural para gerenciar anota�
 - PHP 7.0 ou superior
 - Servidor web compatível com PHP (por exemplo, Apache, Nginx)
 - Banco de dados MySQL
+- Extensão PDO habilitada.
 
 ## Configuração
 
